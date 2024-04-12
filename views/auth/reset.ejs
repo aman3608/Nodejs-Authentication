@@ -39,10 +39,9 @@
                     <form action="/reset" method="POST">
                         <% if(messages.error) { %>
                             <span class="text-red-500 text-sm para">
-                                <%= messages.error %>
+                                <%=messages.error%>
                             </span>
                         <% } %>
-                >
                                 <div class="mb-3">
                                     <label for="email" class="form-label font-bold">Name</label>
                                     <input name="username"  value="<%= messages.username  %>" type="text" class="form-control " id="username"
